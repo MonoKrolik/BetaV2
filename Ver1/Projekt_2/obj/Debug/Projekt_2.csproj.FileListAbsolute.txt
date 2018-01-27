@@ -1,0 +1,32 @@
+C:\Users\krolik\source\repos\Ver1\Projekt_2\bin\Debug\Projekt_2.exe.config
+C:\Users\krolik\source\repos\Ver1\Projekt_2\bin\Debug\Projekt_2.exe
+C:\Users\krolik\source\repos\Ver1\Projekt_2\bin\Debug\Projekt_2.pdb
+C:\Users\krolik\source\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.Form2.resources
+C:\Users\krolik\source\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.Properties.Resources.resources
+C:\Users\krolik\source\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.csproj.GenerateResource.Cache
+C:\Users\krolik\source\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.csproj.CoreCompileInputs.cache
+C:\Users\krolik\source\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.exe
+C:\Users\krolik\source\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.pdb
+C:\Users\krolik\source\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.csprojResolveAssemblyReference.cache
+C:\Users\krolik\source\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.Form3.resources
+C:\Users\krolik\source\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.Form4.resources
+D:\Visual 2017\repos\Ver1\Projekt_2\bin\Debug\Projekt_2.exe.config
+D:\Visual 2017\repos\Ver1\Projekt_2\bin\Debug\Projekt_2.exe
+D:\Visual 2017\repos\Ver1\Projekt_2\bin\Debug\Projekt_2.pdb
+D:\Visual 2017\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.csprojResolveAssemblyReference.cache
+D:\Visual 2017\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.Form1.resources
+D:\Visual 2017\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.Form2.resources
+D:\Visual 2017\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.Form3.resources
+D:\Visual 2017\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.Form4.resources
+D:\Visual 2017\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.Properties.Resources.resources
+D:\Visual 2017\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.csproj.GenerateResource.Cache
+D:\Visual 2017\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.csproj.CoreCompileInputs.cache
+D:\Visual 2017\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.exe
+D:\Visual 2017\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.pdb
+D:\Visual 2017\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.Form6.resources
+D:\Visual 2017\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.Form5.resources
+C:\Users\krolik\source\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.Form1.resources
+C:\Users\krolik\source\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.Form5.resources
+C:\Users\krolik\source\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.Form6.resources
+C:\Users\krolik\source\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.Form8.resources
+C:\Users\krolik\source\repos\Ver1\Projekt_2\obj\Debug\Projekt_2.Form9.resources

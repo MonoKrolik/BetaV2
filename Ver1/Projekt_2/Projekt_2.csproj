@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5A1C493-B0E1-4365-93BB-2C90BF173843}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Projekt_2</RootNamespace>
+    <AssemblyName>Projekt_2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form9.Designer.cs">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form9.resx">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bizon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\east57.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgpreview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1448203267_morten-koldby-bisonprofile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22001977-Взрослый-рогатый-буйвол-изолированных-на-белом-фоне.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-translate-detected_2488574.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgpreview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2009_0903Panthera_leo1550isolated.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2448093-thumb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\645148078.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20131305124036.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Фон.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\220px-Vladimir_Putin_%282017-07-08%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9a376bbcfbb2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\355-1456085374.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2017-04-18_23-51-21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4727-957553.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\249417.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000000J.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1249161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8489211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\366610597.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ffx-2_yunaartwork.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flat-caracters-design4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kratos--personazh-serii-faytingov-Mortal-Kombat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post-1509763-1455910542.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9d055b295f915945bc5ac887210e853f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30c55b5f47847f75bdf17c97516460b1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgpreview1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vektor-figury-cveta-kubiki.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glava.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glavfront.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glavhad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glavper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glavperfront.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glavperhad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glavperzad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round2.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vtorfront.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vtorperhad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vtorpers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragonhad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hoblin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chimera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sunduk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skorpion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pauk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skilet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3763e32592ef7083b8626dd3528cf14b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gyjny.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Новый точечный рисунок %282%29.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19296.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spalnya-4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skrin.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goblinhad.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volkhad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_forest_006-1024x576.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nimfa.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roundfinal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nimfa.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
