@@ -15,7 +15,6 @@ namespace Projekt_2
         public Form1()
         {
             InitializeComponent();
-            button6.Enabled = false;
             button7.Enabled = false;
         }
 
@@ -53,6 +52,22 @@ namespace Projekt_2
             Hide();
             Form5 f5 = new Form5();
             f5.ShowDialog();
+            Close();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Form8 f8 = new Form8();
+            f8.ShowDialog();
+            Close();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Form10 f10 = new Form10();
+            f10.ShowDialog();
             Close();
         }
     }

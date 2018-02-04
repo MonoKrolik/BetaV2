@@ -18,6 +18,9 @@ namespace Projekt_2
         {
             InitializeComponent();
             timer2.Stop();
+            File.WriteAllText(puthstaf, "");
+            File.WriteAllText(puthnimf, "");
+            label1.Visible = false;
             pictureBoxs[1] = pictureBox1;
             pictureBoxs[2] = pictureBox2;
             pictureBoxs[5] = pictureBox6;
@@ -60,6 +63,8 @@ namespace Projekt_2
         bool nps = false;
         int hod = 0;
         int q = 1;
+        string puthstaf = "T/Staf.txt";
+        string puthnimf = "T/Nimfa.txt";
 
         public void restart()
         {
@@ -83,28 +88,12 @@ namespace Projekt_2
             {
                 try
                 {
-                    x.Enabled = false;
+                    //x.Enabled = false;
                 }
                 catch (Exception)
                 { }
 
             }
-            //buttons[1]
-            //buttons[2].Enabled = false;
-            //buttons[5].Enabled = false;
-            //buttons[6].Enabled = false;
-            //buttons[8].Enabled = false;
-            //buttons[9].Enabled = false;
-            //buttons[10].Enabled = false;
-            //buttons[11].Enabled = false;
-            //buttons[12].Enabled = false;
-            //buttons[13].Enabled = false;
-            //buttons[16].Enabled = false;
-            //buttons[17].Enabled = false;
-            //buttons[18].Enabled = false;
-            //buttons[19].Enabled = false;
-            //buttons[20].Enabled = false;
-            //buttons[24].Enabled = false;
         }
         public void buttonVFalse()
         {
@@ -145,28 +134,44 @@ namespace Projekt_2
             Random r = new Random();
             int nStaf = r.Next(0,8);
             int nimfa = r.Next(0,5);
-            string puth = "T/Staf.txt";
-            switch (nStaf)
+            if (ostper == 1)
             {
-                case 1:File.WriteAllText(puth,"Лечение=");break;
-                case 2: File.WriteAllText(puth, "Усиление="); break;
-                case 3: File.WriteAllText(puth, "Огня="); break;
-                case 4: File.WriteAllText(puth, "Воздуха="); break;
-                case 5: File.WriteAllText(puth, "Земля="); break;
-                case 6: File.WriteAllText(puth, "Вода="); break;
-                case 7: File.WriteAllText(puth, "Тиара="); break;
-                default:
-                    break;
+                switch (nStaf)
+                {
+                    case 1: File.WriteAllText(puthstaf, "Лечения"); break;
+                    case 2: File.WriteAllText(puthstaf, "Усиления"); break;
+                    case 3: File.WriteAllText(puthstaf, "Огня"); break;
+                    case 4: File.WriteAllText(puthstaf, "Воздуха"); break;
+                    case 5: File.WriteAllText(puthstaf, "Земли"); break;
+                    case 6: File.WriteAllText(puthstaf, "Воды"); break;
+                    case 7: File.WriteAllText(puthstaf, "Тиара"); break;
+                    default:
+                        break;
+                }
+                label1.Visible = true;
+                string staf = File.ReadAllText("T/Staf.txt");
+                if (staf !="Тиара")
+                {
+                    label1.Text = "PoluchenPredmet: " + "Свиток " + staf;
+                }
+                else
+                {
+                    label1.Text = "PoluchenPredmet: " + staf;
+                }
             }
-            switch (nimfa)
+            if (ostper== 0)
             {
-                case 1: File.AppendAllText(puth, "Огня"); break;
-                case 2: File.AppendAllText(puth, "Воздуха"); break;
-                case 3: File.AppendAllText(puth, "Земля"); break;
-                case 4: File.AppendAllText(puth, "Вода"); break;
-                default:
-                    break;
+                switch (nimfa)
+                {
+                    case 1: File.WriteAllText(puthnimf, "Огня"); break;
+                    case 2: File.WriteAllText(puthnimf, "Воздуха"); break;
+                    case 3: File.WriteAllText(puthnimf, "Земля"); break;
+                    case 4: File.WriteAllText(puthnimf, "Вода"); break;
+                    default:
+                        break;
+                }
             }
+            
         }
 
         public void NPS(int n)
@@ -291,7 +296,7 @@ namespace Projekt_2
             }
 
         }
-
+        int ostper = 0;
         private void button2_Click(object sender, EventArgs e)
         {
             if (p1 == true && zad != 3)
@@ -355,21 +360,18 @@ namespace Projekt_2
 
         private void button8_Click(object sender, EventArgs e)
         {
+            
             if (p1 == true && zad != 3)
             {
                 timer2.Start(); n = 8; nps = true;
                 p1 = false;
                 NPS(n); b = n; buttonEFalse();
-
-
-
             }
             if (zad == 3)
             {
                 buttons[b].Enabled = true; buttons[b + 4].Enabled = true;
                 pictureBox3.Location = new Point(pictureBoxs[n].Location.X + pictureBoxs[n].Width / 4, pictureBoxs[n].Location.Y + pictureBoxs[n].Height / 4);
-               File.WriteAllText("Byte.txt","");
-                zad = 0;
+                zad = 0; ostper = 1; Staf(); pictureBox27.Visible = false;
             }
         }
 
@@ -386,7 +388,7 @@ namespace Projekt_2
                 buttons[b].Enabled = true; buttons[b + 1].Enabled = true; buttons[b + 4].Enabled = true; buttons[b - 4].Enabled = true;
                 pictureBox3.Location = new Point(pictureBoxs[n].Location.X + pictureBoxs[n].Width / 4, pictureBoxs[n].Location.Y + pictureBoxs[n].Height / 4);
                 zad = 0;
-                Staf();
+                
             }
         }
 
@@ -573,6 +575,8 @@ namespace Projekt_2
 
         private void button24_Click(object sender, EventArgs e)
         {
+            ostper = 0;
+            Staf();
             if (p1 == true && zad != 3)
             {
                 timer2.Start(); nps = true;
@@ -587,6 +591,7 @@ namespace Projekt_2
                 zad = 0;
                 Hide();
                 Close();
+                
             }
         }
 

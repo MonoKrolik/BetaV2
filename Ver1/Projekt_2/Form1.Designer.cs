@@ -107,7 +107,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 31);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Ver 8.8 (Open Beta)";
+            this.label1.Text = "Ver 9.0 (Open Beta)";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
@@ -155,8 +155,9 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(185, 59);
             this.button6.TabIndex = 10;
-            this.button6.Text = "Визуальная новелла Глава 3. Страж";
+            this.button6.Text = "Визуальная новелла Глава 3. Союзник";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // pictureBox3
             // 
@@ -177,8 +178,9 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(185, 59);
             this.button7.TabIndex = 12;
-            this.button7.Text = "Визуальная новелла Глава 4. Конец";
+            this.button7.Text = "Визуальная новелла Глава 4. Финал";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Form1
             // 
